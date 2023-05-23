@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.grid {
+  position: absolute;
+  top: 303px;
+  left: 195px;
+  gap: 54px
+}
+
+.template {
+  display: grid;
+  gap: 54px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;  
+}
+
+
+.animated {
+  background-image: url("./assets/toupeira6.svg");
+  animation: toupeiraup 700ms;
+  animation-delay: 700ms;
+ 
+
+}
+
+.animated2 {
+  background-image: url("./assets/toupeira6.svg");
+  animation: toupeiraup 700ms;
+  animation-delay: 2500ms;
+  
+}
+
+.animated3 {
+  background-image: url("./assets/toupeira6.svg");
+  animation: toupeiraup 700ms;
+  animation-delay: 3800ms;
+  
+}
+
+
+@keyframes toupeiraup {
+  0% {
+      background-image: url("./assets/toupeira1.svg");
+  }
+  20% {
+      background-image: url("./assets/toupeira2.svg");
+  }
+  40% {
+      background-image: url("./assets/toupeira3.svg");
+  }
+  60% {
+      background-image: url("./assets/toupeira4.svg");
+  }
+  80% {
+      background-image: url("./assets/toupeira5.svg");
+  }
+  100% {
+      background-image: url("./assets/toupeira6.svg");
+  }
+}
